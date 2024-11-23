@@ -4,18 +4,15 @@ class TextformPage extends StatefulWidget {
   const TextformPage({super.key});
 
   @override
-  State<StatefulWidget> createState() => TextformState();
+  State<StatefulWidget> createState() => _TextformState();
 }
 
-class TextformState extends State<TextformPage> {
+class _TextformState extends State<TextformPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("Text Form Page"),
-      ),
-      body: Center(
+    return Padding(
+      padding: EdgeInsets.all(20),
+      child: Center(
         child: TextField(
           keyboardType: TextInputType.multiline,
           maxLines: null,
