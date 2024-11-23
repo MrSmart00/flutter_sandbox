@@ -30,8 +30,12 @@ $ melos bootstrap
 
 ## TODO
 
-- [x] Show Text
-- [x] Input Text
-- [ ] Tab Control
-- [ ] List
-- [ ] Network Connection
+- ✔️ Show Text
+- ✔️ Input Text
+- Unit test
+- ✔️ Tab Control
+- Navigation
+- List
+- Network Connection
+- Local Storage
+- 
