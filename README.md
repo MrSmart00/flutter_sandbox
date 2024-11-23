@@ -2,6 +2,21 @@
 
 A new Flutter project.
 
+## Environments
+
+```
+🧰 Flutter SDK: 3.24.5
+🧰 Dart SDK: 3.5.4
+📝 Developed by: Visual Studio Code
+```
+
+## Requirements
+
+```
+🧰 fvm: 3.2.1
+🧰 Melos: 6.2.0
+```
+
 ## Getting Started
 
 This project based on [fvm](https://fvm.app/) and uses [Melos](https://melos.invertase.dev/~melos-latest)
