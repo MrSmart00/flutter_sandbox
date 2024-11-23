@@ -1,5 +1,5 @@
-name: flutter_sandbox
-description: "A new Flutter project."
+name: feature_textform
+description: "Counter UI package"
 publish_to: 'none'
 version: 0.0.1
 
@@ -10,12 +10,6 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-
-  feature_counter:
-    path: ../packages/features/counter
-  
-  feature_textform:
-    path: ../packages/features/textform
 
 dev_dependencies:
   flutter_test:
