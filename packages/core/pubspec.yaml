@@ -1,0 +1,12 @@
+name: feature_textform
+description: "Counter UI package"
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+
+dev_dependencies:
+  test: ^1.16.0
