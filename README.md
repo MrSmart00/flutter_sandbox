@@ -27,3 +27,11 @@ $ fvm dart pub cache clean
 $ fvm dart pub global activate melos
 $ melos bootstrap
 ```
+
+## TODO
+
+- [x] Show Text
+- [x] Input Text
+- [ ] Tab Control
+- [ ] List
+- [ ] Network Connection
