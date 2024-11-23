@@ -1,0 +1,9 @@
+{
+  "dart.flutterSdkPath": ".fvm/flutter_sdk",
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.closingLabels": false,
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+}
