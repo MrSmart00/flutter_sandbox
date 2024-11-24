@@ -7,7 +7,7 @@ A new Flutter project.
 ```
 🧰 Flutter SDK: 3.24.5
 🧰 Dart SDK: 3.5.4
-📝 Developed by: Visual Studio Code
+📝 IDE: Visual Studio Code
 ```
 
 ## Requirements
