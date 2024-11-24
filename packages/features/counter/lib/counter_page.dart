@@ -25,33 +25,51 @@ class _CounterPageState extends State<CounterPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(vertical: 50, horizontal: 20),
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
-                'You have pushed the button this many times:',
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Stateful Counter Page'),
+      ),
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  const Text(
+                    'You have pushed the button this many times:',
+                  ),
+                  Text(
+                    '${_counterLogic.counter}',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                ],
               ),
-              Text(
-                '${_counterLogic.counter}',
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),
-            ],
-          ),
-          Positioned(
-            bottom: 0,
-            right: 0,
-            child: FloatingActionButton(
-              onPressed: _incrementCounter,
-              tooltip: 'Increment',
-              child: const Icon(Icons.add),
             ),
-          ),
-        ],
+            Positioned(
+              bottom: 20,
+              right: 20,
+              child: FloatingActionButton(
+                heroTag: 'incrementButton',
+                onPressed: _incrementCounter,
+                tooltip: 'Increment',
+                child: const Icon(Icons.add),
+              ),
+            ),
+            Positioned(
+              bottom: 20,
+              left: 20,
+              child: FloatingActionButton(
+                heroTag: 'resetButton',
+                onPressed: _resetCounter,
+                tooltip: 'Reset',
+                child: const Icon(Icons.refresh),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

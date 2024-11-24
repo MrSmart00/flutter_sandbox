@@ -1,7 +1,6 @@
+import 'package:feature_counter/counter_root_navigation.dart';
 import 'package:feature_textform/text_form_page.dart';
 import 'package:flutter/material.dart';
-import 'package:feature_counter/counter_page.dart';
-import 'package:feature_counter/stateless_counter_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: DefaultTabController(
-        length: 3, 
+        length: 2, 
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -27,10 +26,6 @@ class MyApp extends StatelessWidget {
                 const Tab(
                   icon: Icon(Icons.add_rounded),
                   text: "Counter"
-                ),
-                const Tab(
-                  icon: Icon(Icons.add_rounded),
-                  text: "Stateless"
                 ),
                 const Tab(
                   icon: Icon(Icons.text_fields),
@@ -42,8 +37,7 @@ class MyApp extends StatelessWidget {
           ),
           body: const TabBarView(
             children: [
-              const CounterPage(),
-              const StatelessCounterPage(),
+              const CounterRootNavigation(),
               const TextformPage()
             ]
           )
