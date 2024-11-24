@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:app_core/annotations.dart';
 
 class CounterPage extends StatefulWidget {
   const CounterPage({super.key});
@@ -8,11 +9,17 @@ class CounterPage extends StatefulWidget {
 }
 
 class _CounterPageState extends State<CounterPage> {
-  int _counter = 0;
+  final CounterLogic _counterLogic = CounterLogic();
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      _counterLogic.increment();
+    });
+  }
+
+  void _resetCounter() {
+    setState(() {
+      _counterLogic.reset();
     });
   }
 
@@ -30,7 +37,7 @@ class _CounterPageState extends State<CounterPage> {
                 'You have pushed the button this many times:',
               ),
               Text(
-                '$_counter',
+                '${_counterLogic.counter}',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
             ],

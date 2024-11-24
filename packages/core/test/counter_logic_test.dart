@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import '../lib/counter_logic.dart';
+import '../lib/src/counter_logic.dart';
 
 void main() {
   group('CounterLogic', () {
