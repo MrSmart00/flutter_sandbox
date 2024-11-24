@@ -1,0 +1,24 @@
+type/feature:
+    - head-branch:
+      - "feature/*"
+type/bug:
+  - head-branch:
+    - "fix/*"
+    - "hotfix/*"
+Documentation:
+  - changed-files:
+    - any-glob-to-any-file: '**/*.md'
+apps:
+  - changed-files:
+    - any-glob-to-any-file: 'apps/**'
+packages:
+  - changed-files:
+    - any-glob-to-any-file: 'packages/**'
+CI/CD:
+  - changed-files:
+    - any-glob-to-any-file: '.github/workflows/**'
+    - any-glob-to-any-file: '.github/actions/**'
+    - any-glob-to-any-file: '.github/labeler.yaml'
+release:
+ - base-branch: 'main'
+ 
