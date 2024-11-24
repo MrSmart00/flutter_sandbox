@@ -13,6 +13,9 @@ dependencies:
 
   app_core_common:
     path: ../../core/common
+  
+  app_core_app:
+    path: ../../core/app
 
 dev_dependencies:
   flutter_test:

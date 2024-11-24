@@ -14,6 +14,9 @@ dependencies:
   app_core_common:
     path: ../packages/core/common
 
+  app_core_app:
+    path: ../packages/core/app
+
   feature_counter:
     path: ../packages/features/counter
   
