@@ -34,7 +34,7 @@ $ melos bootstrap
 - ✔️ Input Text
 - ✔️ Unit test
 - ✔️ Tab Control
-- Navigation
+- ✔️ Navigation
 - List
 - Network Connection
 - Local Storage
