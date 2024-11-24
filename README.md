@@ -32,7 +32,7 @@ $ melos bootstrap
 
 - ✔️ Show Text
 - ✔️ Input Text
-- Unit test
+- ✔️ Unit test
 - ✔️ Tab Control
 - Navigation
 - List
