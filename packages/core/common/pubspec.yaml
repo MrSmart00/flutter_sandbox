@@ -1,4 +1,4 @@
-name: app_core
+name: app_core_common
 description: "Counter UI package"
 publish_to: 'none'
 version: 0.0.1

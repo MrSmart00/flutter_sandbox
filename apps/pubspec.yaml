@@ -11,8 +11,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
 
-  app_core:
-    path: ../packages/core
+  app_core_common:
+    path: ../packages/core/common
 
   feature_counter:
     path: ../packages/features/counter
