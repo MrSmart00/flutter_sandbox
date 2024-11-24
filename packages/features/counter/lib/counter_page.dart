@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app_core/annotations.dart';
+import 'package:app_core_common/annotations.dart';
 
 class CounterPage extends StatefulWidget {
   const CounterPage({super.key});

@@ -1,4 +1,4 @@
-name: feature_counter
+name: app_core_app
 description: "Counter UI package"
 publish_to: 'none'
 version: 0.0.1
@@ -9,18 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
-
-  app_core_common:
-    path: ../../core/common
-  
-  app_core_app:
-    path: ../../core/app
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^4.0.0
-
-flutter:
-  uses-material-design: true
