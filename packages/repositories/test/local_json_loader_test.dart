@@ -1,3 +1,4 @@
+import 'package:app_repository/entities/feed.dart';
 import 'package:app_repository/services/local_json_loader.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -52,10 +53,13 @@ void main() {
     ''';
 
     final mockAssetBundle = MockAssetBundle({
-      'assets/rss.json': mockJson,
+      'assets/mock.json': mockJson,
     });
 
-    final feed = await LocalJsonLoader(assetBundle: mockAssetBundle).fetch();
+    final feed = await LocalJsonLoader(assetBundle: mockAssetBundle).fetch(
+      'assets/mock.json',
+      (json) => Feed.fromJson(json),
+    );
 
     expect(feed.status, 'ok');
     expect(feed.feed.title, 'Example Tech Blog');
