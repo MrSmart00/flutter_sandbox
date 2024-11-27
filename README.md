@@ -35,7 +35,10 @@ $ melos bootstrap
 - ✔️ Unit test
 - ✔️ Tab Control
 - ✔️ Navigation
-- List
+- ✔️ Local JSON Load
 - Network Connection
+- List widget control
+- package:freezed
+- package:riverpod
 - Local Storage
 - 
