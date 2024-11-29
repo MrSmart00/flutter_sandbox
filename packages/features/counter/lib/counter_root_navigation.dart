@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 /// StatelessCounterPage
 class CounterRootNavigation extends StatelessWidget {
   /// Constructor for CounterRootNavigation
-  const CounterRootNavigation({Key? key}) : super(key: key);
+  const CounterRootNavigation({super.key});
 
   /// Builds the widget tree for this widget
   @override
@@ -15,19 +15,19 @@ class CounterRootNavigation extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          /// Button to navigate to CounterPage
+          // Button to navigate to CounterPage
           ElevatedButton(
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
+                MaterialPageRoute<CounterPage>(
                   builder: (context) => const CounterPage(),
                 ),
               );
             },
             child: const Text('Go to CounterPage'),
           ),
-          /// Button to navigate to StatelessCounterPage
+          // Button to navigate to StatelessCounterPage
           ElevatedButton(
             onPressed: () {
               Navigator.push(

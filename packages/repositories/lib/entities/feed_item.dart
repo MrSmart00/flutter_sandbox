@@ -2,16 +2,6 @@
 import 'feed_enclosure.dart';
 
 class FeedItem {
-  final String title;
-  final String pubDate;
-  final String link;
-  final String guid;
-  final String author;
-  final String thumbnail;
-  final String description;
-  final String content;
-  final FeedEnclosure enclosure;
-  final List<String> categories;
 
   FeedItem({
     required this.title,
@@ -25,6 +15,16 @@ class FeedItem {
     required this.enclosure,
     required this.categories,
   });
+  final String title;
+  final String pubDate;
+  final String link;
+  final String guid;
+  final String author;
+  final String thumbnail;
+  final String description;
+  final String content;
+  final FeedEnclosure enclosure;
+  final List<String> categories;
 
   factory FeedItem.fromJson(Map<String, dynamic> json) {
     return FeedItem(
