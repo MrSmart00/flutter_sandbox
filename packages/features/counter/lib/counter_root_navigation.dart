@@ -32,7 +32,7 @@ class CounterRootNavigation extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
+                MaterialPageRoute<StatelessCounterPage>(
                   builder: (context) => const StatelessCounterPage(),
                 ),
               );
