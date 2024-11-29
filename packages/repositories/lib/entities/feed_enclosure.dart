@@ -9,8 +9,8 @@ class FeedEnclosure {
 
   factory FeedEnclosure.fromJson(Map<String, dynamic> json) {
     return FeedEnclosure(
-      link: json['link'],
-      type: json['type'],
+      link: json['link'] as String,
+      type: json['type'] as String,
     );
   }
 }
