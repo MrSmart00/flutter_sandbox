@@ -15,9 +15,19 @@ command:
       flutter:
         sdk: flutter
     dev_dependencies:
+      custom_lint: ^0.7.0
       build_runner: ^2.4.12
       flutter_test:
         sdk: flutter
+
+scripts:
+  lint:
+    run: dart run custom_lint
+    exec:
+      concurrency: 5
+    packageFilters:
+      dependsOn: custom_lint
+
 ide:
   intellij:
     enabled: false

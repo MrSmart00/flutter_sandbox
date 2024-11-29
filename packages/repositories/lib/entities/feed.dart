@@ -14,10 +14,10 @@ class Feed {
 
   factory Feed.fromJson(Map<String, dynamic> json) {
     return Feed(
-      status: json['status'],
-      feed: FeedInfo.fromJson(json['feed']),
-      items: (json['items'] as List).map((item) => FeedItem.fromJson(item)).toList(),
+      status: json['status'] as String,
+      feed: FeedInfo.fromJson(json['feed'] as Map<String, dynamic>),
+      items: (json['items'] as List)
+        .map((item) => FeedItem.fromJson(item as Map<String, dynamic>)).toList()
     );
   }
 }
-

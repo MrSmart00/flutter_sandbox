@@ -17,12 +17,12 @@ class FeedInfo {
 
   factory FeedInfo.fromJson(Map<String, dynamic> json) {
     return FeedInfo(
-      url: json['url'],
-      title: json['title'],
-      link: json['link'],
-      author: json['author'],
-      description: json['description'],
-      image: json['image'],
+      url: json['url'] as String,
+      title: json['title'] as String,
+      link: json['link'] as String,
+      author: json['author'] as String,
+      description: json['description'] as String,
+      image: json['image'] as String,
     );
   }
 }
