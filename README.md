@@ -40,5 +40,6 @@ $ melos bootstrap
 - List widget control
 - package:freezed
 - package:riverpod
+- ✔️ package: custom_lint
 - Local Storage
 - 
