@@ -36,7 +36,7 @@ $ melos bootstrap
 - ✔️ Tab Control
 - ✔️ Navigation
 - ✔️ Local JSON Load
-- Network Connection
+- ✔️ Network Connection
 - List widget control
 - package:freezed
 - package:riverpod
