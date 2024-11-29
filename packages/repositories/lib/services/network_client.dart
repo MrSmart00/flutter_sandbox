@@ -1,0 +1,34 @@
+import 'dart:convert';
+import 'package:app_repository/entities/network_mode.dart';
+import 'package:app_repository/services/local_json_loader.dart';
+import 'package:http/http.dart' as http;
+
+abstract class INetworkClient {
+  Future<T> fetch<T>(
+    String endpoint, 
+    T Function(Map<String, dynamic>) fromJson,
+  );
+}
+
+class NetworkClient implements INetworkClient {
+  NetworkClient(this.mode);
+
+  final NetworkMode mode;
+
+  @override
+  Future<T> fetch<T>(
+    String endpoint, 
+    T Function(Map<String, dynamic>) fromJson,
+  ) async {
+    final Map<String, dynamic> jsonMap;
+
+    switch (mode) {
+      case HttpNetworkMode(baseUrl: final baseUrl):
+        final response = await http.get(Uri.parse('$baseUrl$endpoint'));
+        jsonMap = json.decode(response.body) as Map<String, dynamic>;
+      case LocalNetworkMode():
+        jsonMap = await LocalJsonLoader().fetch(endpoint, (json) => json);
+    }
+    return fromJson(jsonMap);
+  }
+}
