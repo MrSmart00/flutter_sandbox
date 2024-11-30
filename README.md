@@ -38,7 +38,7 @@ $ melos bootstrap
 - ✔️ Local JSON Load
 - ✔️ Network Connection
 - ✔️ List widget control
-- package:freezed
+- ✔️ package:freezed
 - package:riverpod
 - ✔️ package: custom_lint
 - Local Storage
