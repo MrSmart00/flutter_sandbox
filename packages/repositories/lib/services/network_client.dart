@@ -11,7 +11,7 @@ class NetworkClient implements INetworkClient {
 
   @override
   Future<T> fetch<T>(
-    String endpoint, 
+    String endpoint,
     T Function(Map<String, dynamic>) fromJson,
   ) async {
     final Map<String, dynamic> jsonMap;

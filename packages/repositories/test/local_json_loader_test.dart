@@ -69,14 +69,16 @@ void main() {
 
     final firstItem = feed.items[0];
     expect(firstItem.title, '機械学習入門');
-    expect(firstItem.link, 'https://example.com/posts/2024-11-26-introduction-to-machine-learning/');
+    expect(firstItem.link,
+        'https://example.com/posts/2024-11-26-introduction-to-machine-learning/');
     expect(firstItem.pubDate, '2024-11-26 10:00:00');
     expect(firstItem.author, 'John Doe');
     expect(firstItem.categories, ['機械学習', 'AI']);
 
     final secondItem = feed.items[1];
     expect(secondItem.title, 'React入門');
-    expect(secondItem.link, 'https://example.com/posts/2024-11-25-introduction-to-react/');
+    expect(secondItem.link,
+        'https://example.com/posts/2024-11-25-introduction-to-react/');
     expect(secondItem.pubDate, '2024-11-25 10:00:00');
     expect(secondItem.author, 'Jane Smith');
     expect(secondItem.categories, ['ウェブ開発', 'JavaScript', 'React']);
