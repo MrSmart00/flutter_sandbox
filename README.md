@@ -39,7 +39,7 @@ $ melos bootstrap
 - ✔️ Network Connection
 - ✔️ List widget control
 - ✔️ package:freezed
-- package:riverpod
+- ✔️ package:riverpod
 - ✔️ package: custom_lint
 - Local Storage
 - 
