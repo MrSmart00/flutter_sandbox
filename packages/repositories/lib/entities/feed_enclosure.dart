@@ -1,16 +1,15 @@
-class FeedEnclosure {
-  final String link;
-  final String type;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  FeedEnclosure({
-    required this.link,
-    required this.type,
-  });
+part 'feed_enclosure.freezed.dart';
+part 'feed_enclosure.g.dart';
 
-  factory FeedEnclosure.fromJson(Map<String, dynamic> json) {
-    return FeedEnclosure(
-      link: json['link'] as String,
-      type: json['type'] as String,
-    );
-  }
+@freezed
+class FeedEnclosure with _$FeedEnclosure {
+  const factory FeedEnclosure({
+    required String link,
+    required String type,
+  }) = _FeedEnclosure;
+
+  factory FeedEnclosure.fromJson(Map<String, dynamic> json) =>
+      _$FeedEnclosureFromJson(json);
 }

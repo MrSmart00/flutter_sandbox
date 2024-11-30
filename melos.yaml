@@ -27,6 +27,12 @@ scripts:
       concurrency: 5
     packageFilters:
       dependsOn: custom_lint
+  rebuild:
+    run: dart run build_runner build -d && melos format -c 5
+    exec:
+      orderDependents: true
+    packageFilters:
+      dependsOn: build_runner
 
 ide:
   intellij:
