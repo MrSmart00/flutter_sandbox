@@ -1,6 +1,8 @@
 import 'package:app_core_common/interfaces/interface_network_client.dart';
 import 'package:app_repositories/entities/feed.dart';
 import 'package:app_repositories/entities/feed_item.dart';
+import 'package:app_repositories/entities/network_mode.dart';
+import 'package:app_repositories/services/network_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -9,7 +11,7 @@ part 'rss_reader_page.g.dart';
 
 // Define a provider for the network client
 final networkClientProvider = Provider<INetworkClient>((ref) {
-  throw UnimplementedError();
+  return const NetworkClient(HttpNetworkMode(baseUrl: 'https://api.rss2json.com/v1/api.json'));
 });
 
 // Define a provider for fetching the feed using @riverpod annotation
