@@ -7,20 +7,20 @@ environment:
   sdk: ^3.5.4
 
 dependencies:
-  flutter:
-    sdk: flutter
-  cupertino_icons: ^1.0.8
-
-  app_core_common:
-    path: ../../core/common
-  
   app_core_app:
     path: ../../core/app
 
+  app_core_common:
+    path: ../../core/common
+
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+
 dev_dependencies:
+  custom_lint: ^0.7.0
   flutter_test:
     sdk: flutter
-  custom_lint: ^0.7.0
 
 flutter:
   uses-material-design: true

@@ -1,5 +1,5 @@
-name: feature_textform
-description: "Counter UI package"
+name: feature_rss
+description: "RSS UI package"
 publish_to: 'none'
 version: 0.0.1
 
@@ -7,6 +7,11 @@ environment:
   sdk: ^3.5.4
 
 dependencies:
+  app_core_common:
+    path: ../../core/common
+  app_repositories:
+    path: ../../repositories
+
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter

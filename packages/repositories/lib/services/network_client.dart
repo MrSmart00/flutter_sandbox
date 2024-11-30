@@ -1,6 +1,6 @@
 import 'dart:convert';
-import 'package:app_repository/entities/network_mode.dart';
-import 'package:app_repository/services/local_json_loader.dart';
+import 'package:app_repositories/entities/network_mode.dart';
+import 'package:app_repositories/services/local_json_loader.dart';
 import 'package:http/http.dart' as http;
 
 abstract class INetworkClient {

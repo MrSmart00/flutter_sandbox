@@ -1,4 +1,4 @@
-name: app_repository
+name: app_repositories
 description: "I/O package"
 publish_to: 'none'
 version: 0.0.1
