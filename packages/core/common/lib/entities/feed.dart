@@ -1,5 +1,5 @@
-import 'package:app_repositories/entities/feed_info.dart';
-import 'package:app_repositories/entities/feed_item.dart';
+import 'package:app_core_common/entities/feed_info.dart';
+import 'package:app_core_common/entities/feed_item.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'feed.freezed.dart';

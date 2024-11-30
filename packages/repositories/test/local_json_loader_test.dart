@@ -1,4 +1,4 @@
-import 'package:app_repositories/entities/feed.dart';
+import 'package:app_core_common/entities/feed.dart';
 import 'package:app_repositories/services/local_json_loader.dart';
 import 'package:flutter_test/flutter_test.dart';
 

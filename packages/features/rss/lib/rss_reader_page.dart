@@ -1,7 +1,7 @@
+import 'package:app_core_common/entities/feed.dart';
+import 'package:app_core_common/entities/feed_item.dart';
+import 'package:app_core_common/entities/network_mode.dart';
 import 'package:app_core_common/interfaces/interface_network_client.dart';
-import 'package:app_repositories/entities/feed.dart';
-import 'package:app_repositories/entities/feed_item.dart';
-import 'package:app_repositories/entities/network_mode.dart';
 import 'package:app_repositories/services/network_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
