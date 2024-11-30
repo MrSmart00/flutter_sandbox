@@ -1,5 +1,5 @@
-import 'package:app_repository/entities/feed.dart';
-import 'package:app_repository/services/local_json_loader.dart';
+import 'package:app_repositories/entities/feed.dart';
+import 'package:app_repositories/services/local_json_loader.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'mock_asset_bundle.dart';
