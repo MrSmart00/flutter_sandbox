@@ -30,16 +30,16 @@ $ melos bootstrap
 
 ## TODO
 
-- ✔️ Show Text
-- ✔️ Input Text
-- ✔️ Unit test
-- ✔️ Tab Control
-- ✔️ Navigation
-- ✔️ Local JSON Load
-- ✔️ Network Connection
-- ✔️ List widget control
-- ✔️ package:freezed
-- ✔️ package:riverpod
-- ✔️ package: custom_lint
+- ✅ Show Text
+- ✅ Input Text
+- ✅ Unit test
+- ✅ Tab Control
+- ✅ Navigation
+- ✅ Local JSON Load
+- ✅ Network Connection
+- ✅ List widget control
+- ✅ package:freezed
+- ✅ package:riverpod
+- ✅ package: custom_lint
 - Local Storage
 - 
