@@ -1,28 +1,19 @@
-class FeedInfo {
-  final String url;
-  final String title;
-  final String link;
-  final String author;
-  final String description;
-  final String image;
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-  FeedInfo({
-    required this.url,
-    required this.title,
-    required this.link,
-    required this.author,
-    required this.description,
-    required this.image,
-  });
+part 'feed_info.freezed.dart';
+part 'feed_info.g.dart';
 
-  factory FeedInfo.fromJson(Map<String, dynamic> json) {
-    return FeedInfo(
-      url: json['url'] as String,
-      title: json['title'] as String,
-      link: json['link'] as String,
-      author: json['author'] as String,
-      description: json['description'] as String,
-      image: json['image'] as String,
-    );
-  }
+@freezed
+class FeedInfo with _$FeedInfo {
+  const factory FeedInfo({
+    required String url,
+    required String title,
+    required String link,
+    required String author,
+    required String description,
+    required String image,
+  }) = _FeedInfo;
+
+  factory FeedInfo.fromJson(Map<String, dynamic> json) =>
+      _$FeedInfoFromJson(json);
 }

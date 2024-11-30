@@ -1,23 +1,17 @@
-import 'feed_info.dart';
-import 'feed_item.dart';
+import 'package:app_repositories/entities/feed_info.dart';
+import 'package:app_repositories/entities/feed_item.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-class Feed {
-  final String status;
-  final FeedInfo feed;
-  final List<FeedItem> items;
+part 'feed.freezed.dart';
+part 'feed.g.dart';
 
-  Feed({
-    required this.status,
-    required this.feed,
-    required this.items,
-  });
+@freezed
+class Feed with _$Feed {
+  const factory Feed({
+    required String status,
+    required FeedInfo feed,
+    required List<FeedItem> items,
+  }) = _Feed;
 
-  factory Feed.fromJson(Map<String, dynamic> json) {
-    return Feed(
-      status: json['status'] as String,
-      feed: FeedInfo.fromJson(json['feed'] as Map<String, dynamic>),
-      items: (json['items'] as List)
-        .map((item) => FeedItem.fromJson(item as Map<String, dynamic>)).toList()
-    );
-  }
+  factory Feed.fromJson(Map<String, dynamic> json) => _$FeedFromJson(json);
 }
