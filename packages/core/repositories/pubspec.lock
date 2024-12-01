@@ -33,7 +33,7 @@ packages:
   app_core_common:
     dependency: "direct main"
     description:
-      path: "../core/common"
+      path: "../common"
       relative: true
     source: path
     version: "0.0.1"
