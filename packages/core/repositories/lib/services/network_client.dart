@@ -1,11 +1,12 @@
 import 'dart:convert';
+
+import 'package:app_core_common/entities/network_mode.dart';
 import 'package:app_core_common/interfaces/interface_network_client.dart';
-import 'package:app_repositories/entities/network_mode.dart';
 import 'package:app_repositories/services/local_json_loader.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkClient implements INetworkClient {
-  const NetworkClient(this.mode);
+  const NetworkClient({required this.mode});
 
   final NetworkMode mode;
 

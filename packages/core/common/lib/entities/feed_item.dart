@@ -1,4 +1,4 @@
-import 'package:app_repositories/entities/feed_enclosure.dart';
+import 'package:app_core_common/entities/feed_enclosure.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'feed_item.freezed.dart';

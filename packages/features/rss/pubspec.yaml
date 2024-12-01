@@ -10,7 +10,7 @@ dependencies:
   app_core_common:
     path: ../../core/common
   app_repositories:
-    path: ../../repositories
+    path: ../../core/repositories
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter

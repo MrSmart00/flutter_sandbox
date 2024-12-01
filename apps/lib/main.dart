@@ -1,3 +1,6 @@
+import 'package:app_core_common/constants.dart';
+import 'package:app_core_common/entities/network_mode.dart';
+import 'package:app_repositories/services/network_client.dart';
 import 'package:feature_counter/counter_root_navigation.dart';
 import 'package:feature_rss/rss_reader_page.dart';
 import 'package:feature_textform/text_form_page.dart';
@@ -13,7 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
+    const client = NetworkClient(
+      mode: HttpNetworkMode(baseUrl: Constants.rssBaseUrl),
+    );
     return MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -28,17 +33,17 @@ class MyApp extends StatelessWidget {
               tabs: [
                 Tab(
                   icon: Icon(Icons.add_rounded),
-                  text: 'Counter'
+                  text: 'Counter',
                 ),
                 Tab(
                   icon: Icon(Icons.text_fields),
-                  text: 'Textform'
+                  text: 'Textform',
                 ),
                 Tab(
                   icon: Icon(Icons.rss_feed),
-                  text: 'RSS'
-                )
-              ]
+                  text: 'RSS',
+                ),
+              ],
             ),
             title: const Text('Flutter Sandbox'),
           ),
@@ -46,11 +51,11 @@ class MyApp extends StatelessWidget {
             children: [
               CounterRootNavigation(),
               TextformPage(),
-              RssReaderPage()
-            ]
-          )
+              RssReaderPage(client: client),
+            ],
+          ),
         ),
-      )
+      ),
     );
   }
 }

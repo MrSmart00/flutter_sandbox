@@ -47,7 +47,7 @@ packages:
   app_repositories:
     dependency: "direct main"
     description:
-      path: "../packages/repositories"
+      path: "../packages/core/repositories"
       relative: true
     source: path
     version: "0.0.1"

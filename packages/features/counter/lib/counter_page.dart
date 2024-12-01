@@ -12,15 +12,11 @@ class _CounterPageState extends State<CounterPage> {
   final CounterLogic _counterLogic = CounterLogic();
 
   void _incrementCounter() {
-    setState(() {
-      _counterLogic.increment();
-    });
+    setState(_counterLogic.increment);
   }
 
   void _resetCounter() {
-    setState(() {
-      _counterLogic.reset();
-    });
+    setState(_counterLogic.reset);
   }
 
   @override
@@ -30,7 +26,7 @@ class _CounterPageState extends State<CounterPage> {
         title: const Text('Stateful Counter Page'),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
         child: Stack(
           alignment: Alignment.center,
           children: [

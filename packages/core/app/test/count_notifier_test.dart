@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/count_notifier.dart';
+import 'package:app_core_app/count_notifier.dart';
 
 void main() {
   group('CountNotifier', () {
