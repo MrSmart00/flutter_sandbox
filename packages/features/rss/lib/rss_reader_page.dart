@@ -3,6 +3,7 @@ import 'package:app_core_common/entities/feed_item.dart';
 import 'package:app_core_common/entities/network_mode.dart';
 import 'package:app_core_common/interfaces/interface_network_client.dart';
 import 'package:app_repositories/services/network_client.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -65,5 +66,11 @@ class FeedItemWidget extends StatelessWidget {
       title: Text(item.title),
       subtitle: Text(item.description),
     );
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty<FeedItem>('item', item));
   }
 }

@@ -3,9 +3,9 @@ import 'package:flutter/services.dart';
 import 'dart:convert';
 
 class MockAssetBundle extends CachingAssetBundle {
-  final Map<String, String> _mockAssets;
 
   MockAssetBundle(this._mockAssets);
+  final Map<String, String> _mockAssets;
 
   @override
   Future<ByteData> load(String key) async {

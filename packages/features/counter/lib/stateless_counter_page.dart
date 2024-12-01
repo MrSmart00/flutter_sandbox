@@ -6,14 +6,14 @@ class StatelessCounterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final CountNotifier notifier = CountNotifier();
+    final notifier = CountNotifier();
   
     return Scaffold(
       appBar: AppBar(
         title: const Text('Stateless Counter Page'),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(vertical: 50, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 20),
         child: Stack(
           alignment: Alignment.center,
           children: [

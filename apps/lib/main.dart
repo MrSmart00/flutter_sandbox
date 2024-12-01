@@ -28,17 +28,17 @@ class MyApp extends StatelessWidget {
               tabs: [
                 Tab(
                   icon: Icon(Icons.add_rounded),
-                  text: 'Counter'
+                  text: 'Counter',
                 ),
                 Tab(
                   icon: Icon(Icons.text_fields),
-                  text: 'Textform'
+                  text: 'Textform',
                 ),
                 Tab(
                   icon: Icon(Icons.rss_feed),
-                  text: 'RSS'
-                )
-              ]
+                  text: 'RSS',
+                ),
+              ],
             ),
             title: const Text('Flutter Sandbox'),
           ),
@@ -46,11 +46,11 @@ class MyApp extends StatelessWidget {
             children: [
               CounterRootNavigation(),
               TextformPage(),
-              RssReaderPage()
-            ]
-          )
+              RssReaderPage(),
+            ],
+          ),
         ),
-      )
+      ),
     );
   }
 }
