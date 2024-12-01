@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'dart:convert';
 
 class MockAssetBundle extends CachingAssetBundle {
-
   MockAssetBundle(this._mockAssets);
   final Map<String, String> _mockAssets;
 
