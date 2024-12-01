@@ -64,7 +64,7 @@ class FeedItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(item.title),
-      subtitle: Text(item.description),
+      subtitle: Text(item.pubDate),
     );
   }
 
