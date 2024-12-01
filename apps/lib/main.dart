@@ -1,3 +1,4 @@
+import 'package:app_core_common/constants.dart';
 import 'package:app_core_common/entities/network_mode.dart';
 import 'package:app_repositories/services/network_client.dart';
 import 'package:feature_counter/counter_root_navigation.dart';
@@ -15,7 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const client = NetworkClient(mode: HttpNetworkMode(baseUrl: 'https://api.rss2json.com/v1/api.json'));
+    const client = NetworkClient(
+      mode: HttpNetworkMode(baseUrl: Constants.rssBaseUrl),
+    );
     return MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -48,7 +51,7 @@ class MyApp extends StatelessWidget {
             children: [
               CounterRootNavigation(),
               TextformPage(),
-              RssReaderPage(client: client,),
+              RssReaderPage(client: client),
             ],
           ),
         ),
