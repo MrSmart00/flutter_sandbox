@@ -20,6 +20,9 @@ dependencies:
 
   feature_counter:
     path: ../packages/features/counter
+
+  feature_flutter_gen_sample:
+    path: ../packages/features/flutter_gen_sample
   
   feature_rss:
     path: ../packages/features/rss

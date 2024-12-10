@@ -2,6 +2,7 @@ import 'package:app_core_common/constants.dart';
 import 'package:app_core_common/entities/network_mode.dart';
 import 'package:app_repositories/services/network_client.dart';
 import 'package:feature_counter/counter_root_navigation.dart';
+import 'package:feature_flutter_gen_sample/local_asset_page.dart';
 import 'package:feature_rss/rss_reader_page.dart';
 import 'package:feature_textform/text_form_page.dart';
 import 'package:flutter/material.dart'; 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -43,6 +44,10 @@ class MyApp extends StatelessWidget {
                   icon: Icon(Icons.rss_feed),
                   text: 'RSS',
                 ),
+                Tab(
+                  icon: Icon(Icons.image),
+                  text: 'FlutterGen',
+                ),
               ],
             ),
             title: const Text('Flutter Sandbox'),
@@ -52,6 +57,7 @@ class MyApp extends StatelessWidget {
               CounterRootNavigation(),
               TextformPage(),
               RssReaderPage(client: client),
+              FlutterGenSamplePage(),
             ],
           ),
         ),
