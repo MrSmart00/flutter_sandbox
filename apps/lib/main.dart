@@ -2,9 +2,11 @@ import 'package:app_core_common/constants.dart';
 import 'package:app_core_common/entities/network_mode.dart';
 import 'package:app_repositories/services/network_client.dart';
 import 'package:feature_counter/counter_root_navigation.dart';
+import 'package:feature_flutter_gen_sample/local_asset_page.dart';
+import 'package:feature_local_asset/local_asset_page.dart';
 import 'package:feature_rss/rss_reader_page.dart';
 import 'package:feature_textform/text_form_page.dart';
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: DefaultTabController(
-        length: 3,
+        length: 5,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -34,6 +36,14 @@ class MyApp extends StatelessWidget {
                 Tab(
                   icon: Icon(Icons.add_rounded),
                   text: 'Counter',
+                ),
+                Tab(
+                  icon: Icon(Icons.image),
+                  text: 'FlutterGen',
+                ),
+                Tab(
+                  icon: Icon(Icons.folder),
+                  text: 'Local Asset',
                 ),
                 Tab(
                   icon: Icon(Icons.text_fields),
@@ -50,6 +60,8 @@ class MyApp extends StatelessWidget {
           body: const TabBarView(
             children: [
               CounterRootNavigation(),
+              FlutterGenSamplePage(),
+              LocalAssetPage(),
               TextformPage(),
               RssReaderPage(client: client),
             ],

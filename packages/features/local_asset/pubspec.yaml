@@ -1,0 +1,22 @@
+name: feature_local_asset
+description: "Local Asset UI package"
+publish_to: 'none'
+version: 0.0.1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  custom_lint: ^0.7.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
