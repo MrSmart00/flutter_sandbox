@@ -20,7 +20,7 @@ class LocalAssetPageState extends State<LocalAssetPage> {
   }
 
   Future<void> _loadJson() async {
-    final response = await rootBundle.loadString('assets/sample.json');
+    final response = await rootBundle.loadString('packages/feature_local_asset/assets/sample.json');
     final data = await json.decode(response);
     setState(() {
       _jsonContent = json.encode(data);
